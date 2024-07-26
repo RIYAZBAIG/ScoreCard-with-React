@@ -1,0 +1,210 @@
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 10px;
+  }
+  
+  .grid-item {
+    grid-column: 2;
+    grid-row: 2;
+  }
+  
+  
+  .grid-item--full-width {
+    grid-column: 1 / span 2;
+    grid-row: 1;
+  }
+  
+  .grid-item--submit {
+    grid-column: 2;
+    grid-row: 2;
+    text-align: right;
+  }
+  
+  
+  .credit-scoring-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    background: #f5f5f5;
+    width: 25px;
+
+  }
+  
+  .form-field {
+    display: flex;
+    flex-direction: column;
+    width: 750px;
+  }
+  
+
+  
+  
+  .delete-icon {
+    width: 24px;
+    height: 24px;
+    background-color: #ff0000; 
+    border-radius: 50%; 
+    position: relative;
+  }
+  
+  .delete-icon::before, .delete-icon::after {
+    content: '';
+    position: absolute;
+    width: 2px;
+    height: 12px;
+    background-color: #fff; 
+    top: 6px;
+    left: 11px;
+    transform: rotate(45deg);
+  }
+  
+  .delete-icon::after {
+    transform: rotate(-45deg);
+  }
+  
+  
+  .checkbox-container {
+    display: flex;
+    align-items: center;
+    margin-left: 15px;
+  }
+  
+  .checkbox-container input[type="checkbox"] {
+    width: 18px; 
+    height: 18px; 
+    margin-right: 5px; 
+  }
+  
+  .small-icon {
+    width: 26px; 
+    height: 26px; 
+  }
+
+  .select-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    grid-gap: 50px; 
+    margin: 15px;
+  }
+  
+
+  .select-item {
+    width: 300px; 
+  }
+  
+  select.form-select {
+    width: 100%; 
+
+
+  }
+  
+    th {
+    margin: 0 10px; 
+    background-color: lightgrey;
+    padding: 10px; 
+  }
+  canvas {
+    background-color: lightgrey; 
+
+  }
+
+  th {
+    margin: 0 10px;
+    background-color: lightgrey;
+    padding: 57px;
+   
+}
+
+
+.Submit-button {
+  padding: 10px 10px;
+  background-color: #5334db;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  width: 65px;
+  margin-left: 1425px;
+  border-radius: 25px;
+}
+
+.Submit-button:hover {
+  background-color: #9ab973;
+  animation: buttonAnimation 0.5s ease infinite alternate;
+}
+
+@keyframes buttonAnimation {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+
+.Submit-button1 {
+  padding: 10px 10px;
+  background-color: hsl(293, 70%, 53%);
+  color: #fff;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  height: 40px;
+  width: 65px;
+  margin-left: 1425px;
+  border-radius: 25px;
+  margin-bottom: 5px;
+}
+
+.Submit-button1:hover {
+  background-color: #2980b9;
+  animation: buttonAnimation 0.5s ease infinite alternate;
+}
+
+@keyframes buttonAnimation {
+  0% {
+      transform: scale(1);
+  }
+  100% {
+      transform: scale(1.1);
+  }
+}
+
+
+    .th1 {
+        height: -10px; /* Adjust the height as needed */
+    }
+
+
+    input[type="number"] {
+      width: 50%;
+      height: 35px;
+      padding: 10px;
+      border: 2px solid #3498db;
+      border-radius: 5px;
+      font-size: 16px;
+      outline: none;
+      transition: border-color 0.3s;
+    }
+  
+    /* Add styles when the input is focused */
+    input[type="number"]:focus {
+      border-color: #ff5733; 
+      width: 55px;
+    }
+
+      /* Add styles when the input is focused */
+      input[type="number"]:focus {
+        border-color: #ff5733; 
+        width: 55px;
+      }
+  
+  
+      .form-grid {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr); /* Two equal-width columns */
+        gap: 10px; /* Adjust the gap between columns */
+      }
